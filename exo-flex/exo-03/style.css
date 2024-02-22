@@ -1,0 +1,82 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+/* Color  */
+
+#color1
+{
+    background-color: aquamarine;
+}
+
+#color2
+{
+    background-color: green;
+}
+
+#color3
+{
+    background-color: red;
+}
+
+#color4
+{
+    background-color: pink;
+}   
+
+/* Code général */
+
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, footer
+{
+    width: 100vw;
+    height: 20vh;
+}
+
+nav, main
+{
+    height: 60vh;
+}
+
+nav
+{
+    width: 20vw;
+}
+
+main
+{
+    width: 80vw;
+}
+@media screen and (max-width : 500px) {
+    
+    main, nav
+    {
+        width: 100vw;
+    }
+    main
+    {
+        height: 40vh;
+    }
+    nav
+    {
+        height: 20vh;
+    }
+
+    #color3
+    {
+        order: -1;
+    }
+    #color1
+    {
+        order: -2;
+    }
+}
